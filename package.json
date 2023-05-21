@@ -45,6 +45,9 @@
     },
     "./esm.mjs": "./esm.mjs"
   },
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.18",
