@@ -20,6 +20,6 @@ program
 program.parse();
 
 // Try the following:
-//    node argument.js --help
+//    node argument.js -h
 //    node argument.js main.remote.site
 //    node argument.js main.remote.site admin
