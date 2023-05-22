@@ -10,9 +10,12 @@ program
   .command('serve')
   .argument('<script>')
   .option('-p, --port <number>', 'port number', 80)
+  // only last action the chain actually runs, not this one!!!
   .action(function(script, options){
     console.error('Run script %s on port %s'.green, script, options.port)
   })
+  // this.args[0] - contains the first .argument, same value as
+  // script argument above
   .action(function() {
     console.error('Run script %s on port %s'.red, this.args[0], this.opts().port);
   });

@@ -14,6 +14,7 @@ program
   .action((server, user) => {
     console.log('server:', server);
     console.log('user:', user);
+    console.log('name:', program.name());
   });
 
 program.parse();

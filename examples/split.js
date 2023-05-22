@@ -10,10 +10,17 @@ program
 program.parse();
 
 const options = program.opts();
+const arguments = program.args;
+console.log('Options: %o', options);
+console.log('Arguments: %o', arguments);
+console.log('Review: process.argv %o', process.argv);
+
 const limit = options.first ? 1 : undefined;
-console.log(program.args[0].split(options.separator, limit));
+console.log(arguments[0].split(options.separator, limit));
+
 
 // Try the following:
+//    node split
 //    node split -s / --fits a/b/c
 //    node split -s / --first a/b/c
 //    node split --separator=, a,b,c
